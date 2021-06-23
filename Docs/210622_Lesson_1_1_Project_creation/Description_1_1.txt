@@ -1,0 +1,13 @@
+Темплейт фронтенда – Asp.Net Core Empty, Net Core 3.1, no config for https, project name = ReactRealtyCourse.Frontend, Solution name = ReactRealtyCourse, location = Dvs_projects
+
+Темплейт бэкенда – Class Library, Net Core 3.1
+DAL – то же самое, Net Core 3.1
+Тесты – xUnit Test project, Net Core 3.1
+
+Какие сборки должны быть в проекте:
+ReactRealtyCourse.Business
+ReactRealtyCourse.DAL
+ReactRealtyCourse.Frontend
+ReactRealtyCourse.Tests
+
+Коммит: 76346e2ced81d1b011a9c92151562b308e993e0f

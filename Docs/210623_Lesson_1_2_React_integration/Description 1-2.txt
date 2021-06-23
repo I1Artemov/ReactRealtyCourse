@@ -1,0 +1,17 @@
+Add package.json
+Add webpack.config.json
+
+Add App folder
+Add App/Containers folder
+Add App/index.jsx
+Add App/Containers/app.jsx
+
+Add Controllers folder
+Add Controllers/HomeController
+Add Views folder
+Add Views/Home folder
+Add Views/Home/Index
+
+Change Startup.cs
+
+run npm install with visual studio closed
