@@ -27,14 +27,23 @@ namespace ReactRealtyCourse.Frontend
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseWebpackDevMiddleware();
             }
 
             app.UseStaticFiles();
-            app.UseMvc(routes =>
+            app.UseRouting();
+
+            app.UseEndpoints(endpoints =>
             {
-                routes.MapRoute(name: "DefaultApi", template: "api/{controller}/{action}");
-                routes.MapSpaFallbackRoute("spa-fallback", new { controller = "Home", action = "Index" });
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapControllerRoute(
+                    name: "api",
+                    pattern: "api/{controller=Default}/{action=Index}/{id?}"
+                    );
+
+                endpoints.MapFallbackToController("Index", "Home");
             });
         }
     }

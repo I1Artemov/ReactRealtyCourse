@@ -15,3 +15,5 @@ Add Views/Home/Index
 Change Startup.cs
 
 run npm install with visual studio closed
+
+Change Startup.cs - add SPA fallback, remove UseWebpackDevMiddleware
