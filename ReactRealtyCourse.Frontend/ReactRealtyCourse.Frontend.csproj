@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="RimuTec.AspNetCore.SpaServices.Extensions" Version="0.9.1" />
+  </ItemGroup>
+
 </Project>

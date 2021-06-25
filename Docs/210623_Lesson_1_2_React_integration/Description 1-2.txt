@@ -16,4 +16,6 @@ Change Startup.cs
 
 run npm install with visual studio closed
 
-Change Startup.cs - add SPA fallback, remove UseWebpackDevMiddleware
+Change Startup.cs
+
+To get UseWebpackDevMiddleware install RimuTec.AspNetCore.SpaServices.Extensions
