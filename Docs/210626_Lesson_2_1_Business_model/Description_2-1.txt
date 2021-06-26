@@ -1,0 +1,5 @@
+Remove class1.cs
+Add folder Models.
+Edit new item template for VisualStudio: 
+	D:\Program files\Microsoft Visual Studio\2019\Community\Common7\IDE\ItemTemplates\CSharp\Code\1033\Class
+Add classes IdInfo.cs, House.cs, Apartment.cs
