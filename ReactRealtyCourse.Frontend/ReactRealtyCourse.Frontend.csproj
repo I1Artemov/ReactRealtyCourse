@@ -8,4 +8,8 @@
     <PackageReference Include="RimuTec.AspNetCore.SpaServices.Extensions" Version="0.9.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ReactRealtyCourse.Business\ReactRealtyCourse.Business.csproj" />
+  </ItemGroup>
+
 </Project>

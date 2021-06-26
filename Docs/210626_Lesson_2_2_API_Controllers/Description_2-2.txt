@@ -1,0 +1,4 @@
+Add HouseController with tags ApiController and Route.
+Add methods GetAll and GetSingle with route attributes.
+Add reference fron Frontend to Business.
+Test API methods in browser.
