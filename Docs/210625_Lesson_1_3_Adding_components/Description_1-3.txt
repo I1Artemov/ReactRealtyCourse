@@ -1,0 +1,9 @@
+Adding React components with sample render function:
+    houseIndex;
+    houseRead.
+    
+Change App.jsx - add import react-router-dom and components. Add links. Add routeer and Switch wrappers.
+    
+Explain why using Link instead of <a> tag in App.jsx
+
+After all explanation, add components apartmentIndex and apartmentRead.
