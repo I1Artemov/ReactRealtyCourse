@@ -1,0 +1,18 @@
+Add houseReadReducer.jsx, fill with content.
+
+Modify houseRead.jsx.
+- add import connect;
+- add data from props to render
+- add mapStateToProps
+- add connect
+- remove export class
+
+Modify index.jsx
+- add imports
+- import houseReadReducer
+- add configureStore (without thunk and reducer combination!)
+- add Provider wrapper
+
+Modify package.json - add redux and react-redux
+
+Run npm install
