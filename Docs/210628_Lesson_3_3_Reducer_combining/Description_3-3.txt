@@ -1,0 +1,1 @@
+Add file houseIndexReducer.jsx, fill with content
