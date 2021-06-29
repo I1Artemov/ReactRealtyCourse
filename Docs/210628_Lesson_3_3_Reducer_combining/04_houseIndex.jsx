@@ -2,28 +2,29 @@
 import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
 
-class ApartmentIndex extends React.Component {
+class HouseIndex extends React.Component {
     render() {
-        let apartmentsInfo = this.props.apartmentsInfo
+        let housesInfo = this.props.housesInfo;
+
         return (
             <div style={{ textAlign: "center", marginTop: "20px" }}>
-                <h3>Apartments list</h3>
+                <h3>Houses list</h3>
 
                 <table style={{ width: "80%", marginLeft: "auto", marginRight: "auto", backgroundColor: "lightgray" }}>
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Price</th>
-                            <th>House ID</th>
+                            <th>Creation date</th>
+                            <th>Address</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {apartmentsInfo.map(apartment =>
-                        (<tr key={apartment.id}>
-                            <td>{apartment.id}</td>
-                            <td>{apartment.price} rub.</td>
-                            <td>{apartment.houseId}</td>
-                        </tr>))}
+                        {housesInfo.map(house =>
+                        (<tr key={house.id}>
+                            <td>{house.id}</td>
+                            <td>{house.buildYear}</td>
+                            <td>{house.address}</td>
+                            </tr>))}
                     </tbody>
                 </table>
             </div>
@@ -33,8 +34,8 @@ class ApartmentIndex extends React.Component {
 
 let mapStateToProps = (state) => {
     return {
-        apartmentsInfo: state.apartmentIndexReducer.apartmentsInfo
+        housesInfo: state.houseIndexReducer.housesInfo
     };
 };
 
-export default connect(mapStateToProps)(ApartmentIndex);
+export default connect(mapStateToProps)(HouseIndex);
