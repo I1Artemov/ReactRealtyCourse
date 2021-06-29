@@ -1,26 +1,37 @@
 ﻿import React from 'react';
 import ReactDOM from 'react-dom';
+import { connect } from 'react-redux';
 
-export default class HouseRead extends React.Component {
+class ApartmentRead extends React.Component {
     render() {
+        let apartmentInfo = this.props.apartmentInfo;
+
         return (
             <div style={{ textAlign: "center", marginTop: "20px" }}>
                 <h3>Information about single apartement</h3>
 
                 <div>
-                    <span style={{ fontWeight: "bold" }}>Address: </span>
-                    <span> Russia, Ekaterinburg, 7, Kalinina st. </span>
+                    <span style={{ fontWeight: "bold" }}>HouseId: </span>
+                    <span> {apartmentInfo.houseId} </span>
 
                 </div>
                 <div>
                     <span style={{ fontWeight: "bold" }}>Price: </span>
-                    <span> 4 500 000 rub. </span>
+                    <span> {apartmentInfo.price} </span>
                 </div>
                 <div>
                     <span style={{ fontWeight: "bold" }}>Floor: </span>
-                    <span> 14 </span>
+                    <span> {apartmentInfo.floor} </span>
                 </div>
             </div>
         );
     }
 };
+
+let mapStateToProps = (state) => {
+    return {
+        apartmentInfo: state.apartmentReadReducer.apartmentInfo
+    };
+};
+
+export default connect(mapStateToProps)(ApartmentRead);
