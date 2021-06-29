@@ -1,1 +1,9 @@
 Add file houseIndexReducer.jsx, fill with content
+
+Modify index.jsx:
+- import combineReducers
+- add rootReducer
+
+Modify houseRead and houseIndex components (mapStateToProps - add reducer name)
+
+Add and combine other reducers

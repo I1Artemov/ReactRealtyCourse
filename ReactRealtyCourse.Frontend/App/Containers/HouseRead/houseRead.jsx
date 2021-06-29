@@ -30,7 +30,7 @@ class HouseRead extends React.Component {
 
 let mapStateToProps = (state) => {
     return {
-        houseInfo: state.houseInfo
+        houseInfo: state.houseReadReducer.houseInfo
     };
 };
 
