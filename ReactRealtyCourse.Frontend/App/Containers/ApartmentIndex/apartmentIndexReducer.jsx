@@ -1,11 +1,29 @@
-﻿const initialState = {
+﻿import {
+    GET_APARTMENTS_SUCCESS,
+    GET_APARTMENTS_ERROR,
+    GET_APARTMENTS_LOADING_IN_PROGRESS
+} from './apartmentIndexConstants.jsx';
+
+const initialState = {
     apartmentsInfo: [
-        { id: 1, houseId: 1, floor: 3, roomAmount: 2, price: 2500000, livingSpace: 33.2 },
-        { id: 2, houseId: 2, floor: 15, roomAmount: 3, price: 7800000, livingSpace: 76.5 },
-        { id: 3, houseId: 2, floor: 6, roomAmount: 1, price: 3850000, livingSpace: 48.4 }
-    ]
+        { id: 1, houseId: 1, floor: null, roomAmount: null, price: null, livingSpace: null }
+    ],
+    isLoading: false,
+    error: null
 };
 
 export default function apartments(state = initialState, action) {
-    return state;
+    switch (action.type) {
+        case GET_APARTMENTS_LOADING_IN_PROGRESS:
+            return { ...state, isLoading: true };
+
+        case GET_APARTMENTS_SUCCESS:
+            return { ...state, apartmentsInfo: action.apartmentsInfo, error: '', isLoading: false };
+
+        case GET_APARTMENTS_ERROR:
+            return { ...state, error: action.error, isLoading: false };
+
+        default:
+            return state;
+    }
 }

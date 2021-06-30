@@ -33,9 +33,9 @@ namespace ReactRealtyCourse.Frontend.Controllers
                 LivingSpace = 56.8f,
                 RoomAmount = 3
             };
-            List<Apartment> apartments = new List<Apartment> { firstApartment, secondApartment };
+            List<Apartment> apartmentsInfo = new List<Apartment> { firstApartment, secondApartment };
 
-            return Json(apartments);
+            return Json(apartmentsInfo);
         }
 
         [Route("get")]

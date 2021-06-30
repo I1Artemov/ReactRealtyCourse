@@ -10,7 +10,7 @@ const initialState = {
     error: null
 };
 
-export default function house(state = initialState, action) {
+export default function apartment(state = initialState, action) {
     switch (action.type) {
         case GET_APARTMENT_LOADING_IN_PROGRESS:
             return { ...state, isLoading: true };
