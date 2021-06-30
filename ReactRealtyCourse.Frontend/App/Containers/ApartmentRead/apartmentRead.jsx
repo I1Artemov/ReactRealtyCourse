@@ -1,10 +1,22 @@
 ﻿import React from 'react';
 import ReactDOM from 'react-dom';
 import { connect } from 'react-redux';
+import { getApartment } from './apartmentReadActions.jsx';
 
 class ApartmentRead extends React.Component {
+    componentDidMount() {
+        this.props.getApartment(1);
+    }
+
     render() {
         let apartmentInfo = this.props.apartmentInfo;
+        let isLoading = this.props.isLoading;
+
+        if (isLoading) {
+            return (<div style={{ textAlign: "center", marginTop: "20px" }}>
+                Loading data...
+            </div>);
+        }
 
         return (
             <div style={{ textAlign: "center", marginTop: "20px" }}>
@@ -30,8 +42,16 @@ class ApartmentRead extends React.Component {
 
 let mapStateToProps = (state) => {
     return {
-        apartmentInfo: state.apartmentReadReducer.apartmentInfo
+        apartmentInfo: state.apartmentReadReducer.apartmentInfo,
+        isLoading: state.apartmentReadReducer.isLoading,
+        error: state.apartmentReadReducer.error
     };
 };
 
-export default connect(mapStateToProps)(ApartmentRead);
+let mapActionsToProps = (dispatch) => {
+    return {
+        getApartment: (id) => dispatch(getApartment(id))
+    };
+};
+
+export default connect(mapStateToProps, mapActionsToProps)(ApartmentRead);

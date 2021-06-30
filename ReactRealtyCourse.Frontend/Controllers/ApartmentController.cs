@@ -56,7 +56,7 @@ namespace ReactRealtyCourse.Frontend.Controllers
                 RoomAmount = 2
             };
 
-            return Json(firstApartment);
+            return Json(new { apartmentInfo = firstApartment });
         }
     }
 }
