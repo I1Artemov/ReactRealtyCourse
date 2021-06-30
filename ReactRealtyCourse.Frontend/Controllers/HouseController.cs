@@ -22,9 +22,9 @@ namespace ReactRealtyCourse.Frontend.Controllers
                 Id = 2, CreateionDateTime = DateTime.Now.AddDays(-8), Address = "Moscow, 19, Pushkin st.",
                 MaxFloor = 9, BuildYear = 1985, WallMaterial = "concrete panel"
             };
-            List<House> houses = new List<House> { firstHouse, secondHouse };
+            List<House> housesInfo = new List<House> { firstHouse, secondHouse };
 
-            return Json(houses);
+            return Json(housesInfo);
         }
 
         [Route("get")]
@@ -39,7 +39,7 @@ namespace ReactRealtyCourse.Frontend.Controllers
                 MaxFloor = 6, BuildYear = 1968, WallMaterial = "brick"
             };
 
-            return Json(firstHouse);
+            return Json(new { houseInfo = firstHouse });
         }
     }
 }

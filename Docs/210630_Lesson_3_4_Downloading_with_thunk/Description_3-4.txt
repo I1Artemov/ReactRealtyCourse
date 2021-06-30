@@ -1,0 +1,35 @@
+Add houseReadConstants, fill with 3 basic constants and href.
+
+Add houseReadActions
+	- import constants
+	- import isomorphic-fetch
+	- create 3 state changeing functions
+	- create downloading function
+
+Edit houseReadReducer:
+	- import constants
+	- add "error" and "isLoading" to initialState
+	- add switch to main function
+
+Edit houseRead component:
+	- import function from actions
+	- add "error" and "isLoading" to mapStateToProps
+	- add mapActionsToProps (id = 1 temporarily)
+	- edit connect - add mapActionsToProps
+	- add componentDidMount
+	- add conditional markup
+
+Edit HouseController - change json to houseInfo
+
+Edit package.json: add isomorphic-fetch and redux-thunk
+
+Edit index.jsx
+	- import thunk
+	- add import of applyMiddleware
+	- add applyMiddleware in createStore
+
+Run npm install
+
+Demonstrate with slow network
+
+Show other components
