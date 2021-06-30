@@ -1,0 +1,39 @@
+{
+  "name": "reactrealtycourse.frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivans",
+  "license": "ISC",
+  "devDependencies": {
+    "aspnet-webpack": "^2.0.3",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-function-bind": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.6",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-transform-parameters": "^7.12.1",
+    "@babel/plugin-transform-spread": "^7.12.1",
+    "babel-loader": "^8.2.1",
+    "moment": "^2.29.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^4.2.2",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "isomorphic-fetch": "^2.2.1"
+  }
+}
