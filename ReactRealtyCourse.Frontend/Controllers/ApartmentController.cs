@@ -16,7 +16,7 @@ namespace ReactRealtyCourse.Frontend.Controllers
             Apartment firstApartment = new Apartment
             {
                 Id = 1,
-                CreateionDateTime = DateTime.Now,
+                CreationDateTime = DateTime.Now,
                 HouseId = 1,
                 Floor = 4,
                 Price = 4500000.0f,
@@ -26,7 +26,7 @@ namespace ReactRealtyCourse.Frontend.Controllers
             Apartment secondApartment = new Apartment
             {
                 Id = 2,
-                CreateionDateTime = DateTime.Now.AddDays(-4),
+                CreationDateTime = DateTime.Now.AddDays(-4),
                 HouseId = 2,
                 Floor = 3,
                 Price = 7800000.0f,
@@ -48,7 +48,7 @@ namespace ReactRealtyCourse.Frontend.Controllers
             Apartment firstApartment = new Apartment
             {
                 Id = 1,
-                CreateionDateTime = DateTime.Now,
+                CreationDateTime = DateTime.Now,
                 HouseId = 1,
                 Floor = 4,
                 Price = 4500000.0f,

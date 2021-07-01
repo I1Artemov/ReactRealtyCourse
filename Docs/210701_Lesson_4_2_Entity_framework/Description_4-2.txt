@@ -1,0 +1,21 @@
+Select DAL project. Install:
+	- Microsoft.EntityFrameworkCore 5.0.7
+	- (... Design 5.0.7)
+	- ... Relational 5.0.7
+	- ... SqlServer 5.0.7
+
+Add file ReactRealtyContext.cs:
+	- Add 2 dbsets
+	- Add reference from DAL to Business
+	- Add constructors
+
+Add and fill ModelBuilderExtensions.cs
+
+Use ModelBuilderExtensions in Context
+
+In Tests add folder DbConnection and file ConnectionTest.cs:
+	- add fact
+	- add reference from Tests to DAL
+	- write "using" statement
+	- add connectionString and OptionsBuilder
+Debug unit test
