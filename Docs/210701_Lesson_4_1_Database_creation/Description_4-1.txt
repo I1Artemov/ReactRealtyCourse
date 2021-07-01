@@ -1,0 +1,5 @@
+Add script All_tables_creation.sql into Infrastructure. Write down the script (at first - table creation).
+Add constraint and index to House table.
+Go to MSSQLServer, create database ReactRealtyCourse with default parameters.
+Run table creation script.
+Fill tables with sample data, run select to test the result.
