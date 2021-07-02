@@ -1,0 +1,25 @@
+Add Repositories folders in DAL
+
+Add HouseRepository.cs
+
+Add methods Save, Update, Delete, Add, Get, GetAll
+Say about IQueryable.
+
+Make repository disposable, implement interface IDisposable.
+
+Add GetWithoutTracking and GetAllWithoutTracking methods.
+
+Show ApartmentRepository that is like HouseRepository.
+
+Write new test in ConnectionTest
+	- add getDbContext method
+
+----------- Save HouseRepository and ApartmentRepository to Lesson folder! -----------
+
+Add EFGenericRepo.cs. Erite it in generics.
+
+Delete HouseRepository and ApartmentRepository.
+
+Rewrite Unit-test.
+
+Change IdInfo - add CreationDateTime setup.
