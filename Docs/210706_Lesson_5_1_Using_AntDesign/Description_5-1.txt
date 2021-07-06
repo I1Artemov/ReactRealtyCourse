@@ -1,0 +1,11 @@
+Edit package.json: add antd in dependencies.
+
+Run npm install
+
+Edit App.jsx:
+	- import Layout from antd (also Content and Footer)
+	- add Layout, footer and content components to render function
+
+Edit index.jsx: import antd css
+
+Add Header component, fill with content, add it to App.jsx
