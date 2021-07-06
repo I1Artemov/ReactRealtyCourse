@@ -1,0 +1,9 @@
+Add reference from Frontend to DAL
+
+Edit HouseController.
+	- Insert repo property and add constructor;
+	- Change fake data in controllers into repo.GetAll.
+
+Edit Startup.cs (ConfigureServices method).
+
+Change ApartmentController like HouseController.

@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ReactRealtyCourse.Business\ReactRealtyCourse.Business.csproj" />
+    <ProjectReference Include="..\ReactRealtyCourse.DAL\ReactRealtyCourse.DAL.csproj" />
   </ItemGroup>
 
   <ItemGroup>
