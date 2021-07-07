@@ -1,0 +1,14 @@
+Edit houseRead.jsx:
+	- import Descriptions and Divider from antd
+	- Rework "return" function
+	- Add link to return to apartments list
+
+Repeat with apartmentRead.jsx
+
+Add links to houseIndex and apartmentIndex (import Link from react-router-dom).
+
+Add pictures to wwwroot/images
+
+Edit houseRead and apartmentRead. Add img, Row and Cols
+
+Add Spin in loading_data sections in all components
