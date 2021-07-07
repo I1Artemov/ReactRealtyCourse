@@ -1,0 +1,10 @@
+Edit houseIndex:
+	- import Table from antd.
+	- change render() function - add columnsInfo, add Table component
+	- Tell about <></> in render
+
+Repeat with apartmentIndex.
+
+Get id from page on apartmentRead and houseRead.
+
+Add link to house in apartmentIndex from houseId.
