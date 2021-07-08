@@ -1,0 +1,3 @@
+Modify componentDidMount in all 4 components.
+
+Go to favicon.io, convert house_logo png into ico format
