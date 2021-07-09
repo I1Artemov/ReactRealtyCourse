@@ -1,0 +1,28 @@
+Add inserts to All_table_creation.sql so, that there is more than 10 houses and apartments.
+
+Run app and show, that client-side paging is already working.
+
+Show in debug - network - getall - response, that all entries are still on page, so we need server-side filtering.
+
+Go to HouseController, edit GetAll method (add parameters and filtering in the method's content).
+
+Go to houseIndexActions.jsx:
+	- modify detHouses (add parameters)
+	- modify receiveHouses (add totalCount)
+
+Go to houseIndexReducer.jsx:
+	- add totalCount to initialState
+	- add totalCount in GET_HOUSES_SUCCESS
+
+Go to houseIndex.jsx.
+	- add totalCount to mapStateToProps
+	- add pagination parameter to getHouses
+	- add totalCount in render()
+	- add onChange handler to Table, so we get new content from server when changing current table page.
+	- add map to housesInfo in render()
+	- clear first isLoading handler
+	- cut columnsInfo outside of render
+
+Show new getall response in debug.
+
+Repeat with apartmentIndex JSX components and ApartmentIndex controller.
