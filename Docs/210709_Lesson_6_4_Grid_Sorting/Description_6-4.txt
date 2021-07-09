@@ -1,0 +1,10 @@
+Go to apartmentIndex.jsx:
+	- add "sorter" to Id and Price
+	- add sorting parameter to all appearances of function getApartments()
+	- pass sorter parameter to getApartments() in handleTableChanges()
+
+Go to apartmentIndexActions.jsx. Add sorting parameter to getApartments() and set queryTrailers by its values.
+
+Go to ApartmentController.GetAll - add sortField and sortOrder parameters.
+
+Go to ApartmentHelper. Change Filtration Method to also use sorting parameters.
