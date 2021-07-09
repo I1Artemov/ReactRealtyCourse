@@ -1,0 +1,14 @@
+Go to Business/Models/Apartment.cs. Add not-mapped fields.
+
+Go to ApartmentController.cs:
+	- add houseRepo reference
+	- add method fillApartmentsWithAdditionalInfo,
+	- call method in GetAll.
+
+Say that only displayed apartments (on current page) will be filled with add. info
+
+Go to apartmentIndex.jsx, change columnsInfo
+
+Edit ApartmentController.GetSingle.
+
+Edit apartmentRead.jsx
