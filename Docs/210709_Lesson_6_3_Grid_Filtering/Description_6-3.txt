@@ -1,0 +1,27 @@
+Go to ApartmentController. Change GetAll method
+	- add minPrice, maxPrice, addressPart to parameters
+	- add filtering logic before totalCount
+
+There is too much code in controller - create ApartmentHelper in DAL/Helpers, copy code.
+
+Go to apartmentIndexConstants, add new for setting filter values.
+
+Go to apartmentIndexReducer:
+	- import constants
+	- add variables to initialState
+	- add state switch handlers
+
+Go to apartmentIndexActions:
+	- import new constants
+	- add function for each action
+
+Say that input parameters will vary depending on imput element in GUI.
+
+Go to apartmentIndex.jsx
+	- import new functions
+	- add functions to mapActionsToProps
+	- add filter variables to mapStateToProps
+	- add input components to render()
+	- pass extra parameters to function getApartments() - also change in mapActionsToProps
+
+Once again go to apartmentIndexActions, change getApartments function (add parameters and a query trails)
